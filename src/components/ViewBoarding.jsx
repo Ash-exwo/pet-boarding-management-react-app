@@ -41,7 +41,7 @@ const ViewBoarding = () => {
 
         <div className="pet-page">
 
-            <NavBar/>
+            <NavBar />
 
             <div className="floating-paw paw-one">🐾</div>
             <div className="floating-paw paw-two">🐾</div>
@@ -136,149 +136,139 @@ const ViewBoarding = () => {
                                     data.length > 0 ?
 
 
-                                    data.map(
-                                        (value, index) => {
+                                        data.map(
+                                            (value, index) => {
 
 
-                                            return (
+                                                return (
 
-                                                <tr key={index}>
+                                                    <tr key={index}>
 
 
-                                                    <td className="fw-bold">
+                                                        <td className="fw-bold">
 
-                                                        {value.bookingId}
+                                                            {value.bookingId}
 
-                                                    </td>
+                                                        </td>
 
 
 
-                                                    <td className="fw-semibold">
+                                                        <td className="fw-semibold">
 
-                                                        🐶 {value.petName}
+                                                            {value.petName}
 
-                                                    </td>
+                                                        </td>
 
 
 
-                                                    <td>
+                                                        <td className="fw-semibold">
 
-                                                        <span className="pet-badge">
+                                                        {value.petType}
 
-                                                            {value.petType}
+                                                        </td>
 
-                                                        </span>
 
-                                                    </td>
 
+                                                        <td>
 
+                                                            {value.breed}
 
-                                                    <td>
+                                                        </td>
 
-                                                        {value.breed}
 
-                                                    </td>
 
+                                                        <td>
 
+                                                            {value.age} yrs
 
-                                                    <td>
+                                                        </td>
 
-                                                        {value.age} yrs
 
-                                                    </td>
 
+                                                        <td>
 
+                                                            {value.weight} kg
 
-                                                    <td>
+                                                        </td>
 
-                                                        {value.weight} kg
 
-                                                    </td>
 
+                                                        <td>
 
+                                                        {value.vaccinationStatus}
 
-                                                    <td>
+                                                        </td>
 
-                                                        <span className="pet-status">
 
-                                                            {value.vaccinationStatus}
 
-                                                        </span>
+                                                        <td>
 
-                                                    </td>
+                                                            {value.ownerName}
 
+                                                        </td>
 
 
-                                                    <td>
 
-                                                        {value.ownerName}
+                                                        <td>
 
-                                                    </td>
+                                                            {value.ownerPhone}
 
+                                                        </td>
 
 
-                                                    <td>
 
-                                                        {value.ownerPhone}
+                                                        <td>
 
-                                                    </td>
+                                                            {value.ownerEmail}
 
+                                                        </td>
 
 
-                                                    <td>
 
-                                                        {value.ownerEmail}
+                                                        <td>
 
-                                                    </td>
+                                                            {value.checkInDate}
 
+                                                        </td>
 
 
-                                                    <td>
 
-                                                        {value.checkInDate}
+                                                        <td>
 
-                                                    </td>
+                                                            {value.checkOutDate}
 
+                                                        </td>
 
 
-                                                    <td>
 
-                                                        {value.checkOutDate}
+                                                        <td>
 
-                                                    </td>
+                                                            <span className="kennel-badge">
 
+                                                                {value.kennelNumber}
 
+                                                            </span>
 
-                                                    <td>
+                                                        </td>
 
-                                                        <span className="kennel-badge">
 
-                                                            🏠 {value.kennelNumber}
+                                                    </tr>
 
-                                                        </span>
+                                                )
 
-                                                    </td>
+                                            }
+                                        )
+                                        :
 
+                                        <tr>
 
-                                                </tr>
+                                            <td colSpan="13">
 
-                                            )
+                                                No boarding bookings available 🐾
 
-                                        }
-                                    )
+                                            </td>
 
-
-                                    :
-
-                                    <tr>
-
-                                        <td colSpan="13">
-
-                                            No boarding bookings available 🐾
-
-                                        </td>
-
-                                    </tr>
+                                        </tr>
 
                                 }
 

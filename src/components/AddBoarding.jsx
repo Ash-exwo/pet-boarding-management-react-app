@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import NavBar from './NavBar'
 
 const AddBoarding = () => {
 
@@ -54,6 +55,8 @@ const AddBoarding = () => {
     return (
 
         <div className="pet-page">
+
+            <NavBar/>
 
             <div className="floating-paw paw-one">🐾</div>
             <div className="floating-paw paw-two">🐾</div>

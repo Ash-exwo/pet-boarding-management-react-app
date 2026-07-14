@@ -255,13 +255,7 @@
   }
 }
 
-.pet-badge {
-  background: #9CB080;
-  color: white;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-}
+
 
 
 .pet-status {
@@ -274,7 +268,6 @@
 
 
 .kennel-badge {
-  background: #D2B48C;
   color: #4B3621;
   padding: 6px 12px;
   border-radius: 20px;
